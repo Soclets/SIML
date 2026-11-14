@@ -73,9 +73,13 @@ Claude proposed it; the owner chose: "yea". (Owner, 2026-11-14)
 programming language does this, so it's learned once (Fale D29). Claude proposed it over doubling (`""`), noting that
 Fale's text has the same question; the owner chose: "yup". (Owner, 2026-11-14)
 
+**D7. A backslash before anything other than `"` or `\` is refused.** Otherwise `"line one\nline two"` would quietly
+mean a backslash and an `n`, when someone used to other languages expects a new line. The error explains, and offers
+`\\` for a real backslash, so a Windows path is written `"C:\\Users"`. Claude proposed it; the owner chose: "yea".
+(Owner, 2026-11-14)
+
 ## Open
 
-- What a backslash before anything other than `"` or `\\` means: just a backslash, or refused.
 - Whether a `key = value` can sit outside any block.
 - Spaces or tabs for indentation, and how many.
 - Encoding (UTF-8 assumed), line endings, and the file extension (`.siml` today).
