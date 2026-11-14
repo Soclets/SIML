@@ -87,8 +87,11 @@ screen while meaning different things to the reader, the classic invisible Pytho
 the tab. Editors insert spaces when the Tab key is pressed. Fale uses the same rule for its code (Fale D54). Claude
 proposed it; the owner asked "What does that mean?", then chose: "yea". (Owner, 2026-11-14)
 
+**D10. A SIML file is UTF-8, accepts LF and CRLF line endings, and ends in `.siml`.** UTF-8 so any language's
+names work. Both line endings, since Windows editors write CRLF and refusing it would trip Windows users for nothing.
+`.siml` is the owner's name for it (D1). Claude proposed them together; the owner chose: "yes". (Owner, 2026-11-14)
+
 ## Open
 
-- Encoding (UTF-8 assumed), line endings, and the file extension (`.siml` today).
 - Which mistakes SIML itself refuses, and which are the host's to refuse.
 - When Cyborg and Jernal move from D1's syntax to D2's.

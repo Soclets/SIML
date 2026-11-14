@@ -47,8 +47,11 @@ description = "Says hello to the world"    (this is a comment)
 (a whole line can be a comment)
 ```
 
+## 5. Files
+
+A SIML file is UTF-8, its lines may end in LF or CRLF, and its name ends in `.siml` (D10).
+
 ## Not decided
 
-- Encoding (UTF-8 assumed), line endings, and the file extension (`.siml` today).
 - Which mistakes SIML itself refuses (an unclosed quote or block, a mismatched `end`, a bad key), and which are the
   host's to refuse.
