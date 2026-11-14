@@ -44,9 +44,20 @@ SIML's host, rather than fixed"; Claude filled in indentation, comment and quoti
 lives on its own, and Fale, Cyborg and Jernal point at it. Jernal's design session suggested a shared repo. The owner
 chose: "yup. SIML in big letters". (Owner, 2026-11-14)
 
+**D4. A list is written in `[ ]`, with items separated by commas.** Like a list in Fale (Fale D3, D36: `[ ]` holds):
+
+```
+details:
+    author = ["Tankun", "Multifinity"]
+end details
+```
+
+The host decides which keys take a list. Claude had proposed repeating the key; the owner wrote this instead.
+(Owner, 2026-11-14)
+
 ## Open
 
-- Lists, such as several authors.
+- Long lists: whether a list may span several lines, and whether a comma after the last item is allowed.
 - How to write a `"` inside text.
 - Whether a `key = value` can sit outside any block.
 - Spaces or tabs for indentation, and how many.

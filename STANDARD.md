@@ -22,6 +22,8 @@ Inside a block, each line is a key, `=`, and a value (D2). The host decides whic
 - **Text** is in quotes, even without a space: `"Hello"` (D2).
 - **A bare word** is one the host knows, like `allowed`. The host refuses a word it doesn't know (D2).
 - Inside quotes, every character is just a character, including `(` and `)` (D2).
+- **A list** is in `[ ]`, with items separated by commas: `author = ["Tankun", "Multifinity"]` (D4). The host decides
+  which keys take a list.
 
 ## 4. Comments
 
@@ -35,7 +37,7 @@ description = "Says hello to the world"    (this is a comment)
 
 ## Not decided
 
-- Lists, such as several authors.
+- Long lists: whether a list may span several lines, and whether a comma after the last item is allowed.
 - How to write a `"` inside text.
 - Whether a `key = value` can sit outside any block.
 - Spaces or tabs for indentation, and how many.
