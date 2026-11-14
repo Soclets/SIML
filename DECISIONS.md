@@ -82,9 +82,13 @@ mean a backslash and an `n`, when someone used to other languages expects a new 
 a file SIML: each one names what its lines are for. Claude had proposed allowing loose keys and letting the host
 decide; the owner said: "Tbh, the blocks is what makes it SIML". (Owner, 2026-11-14)
 
+**D9. Indentation is 4 spaces per level, and a tab character is refused.** A tab and spaces can look identical on
+screen while meaning different things to the reader, the classic invisible Python error. The error offers to convert
+the tab. Editors insert spaces when the Tab key is pressed. Fale uses the same rule for its code (Fale D54). Claude
+proposed it; the owner asked "What does that mean?", then chose: "yea". (Owner, 2026-11-14)
+
 ## Open
 
-- Spaces or tabs for indentation, and how many.
 - Encoding (UTF-8 assumed), line endings, and the file extension (`.siml` today).
 - Which mistakes SIML itself refuses, and which are the host's to refuse.
 - When Cyborg and Jernal move from D1's syntax to D2's.

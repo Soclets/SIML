@@ -5,7 +5,8 @@ take, and what they mean. SIML itself only knows the four things below (D2).
 
 ## 1. Blocks
 
-A block opens with a name and `:`, and closes with `end` and the same name. Lines inside are indented (D2).
+A block opens with a name and `:`, and closes with `end` and the same name. Lines inside are indented by 4 spaces
+per level, and a tab character is refused (D2, D9).
 
 ```
 permissions:
@@ -48,7 +49,6 @@ description = "Says hello to the world"    (this is a comment)
 
 ## Not decided
 
-- Spaces or tabs for indentation, and how many.
 - Encoding (UTF-8 assumed), line endings, and the file extension (`.siml` today).
 - Which mistakes SIML itself refuses (an unclosed quote or block, a mismatched `end`, a bad key), and which are the
   host's to refuse.
