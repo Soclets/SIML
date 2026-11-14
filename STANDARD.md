@@ -23,7 +23,15 @@ Inside a block, each line is a key, `=`, and a value (D2). The host decides whic
 - **A bare word** is one the host knows, like `allowed`. The host refuses a word it doesn't know (D2).
 - Inside quotes, every character is just a character, including `(` and `)` (D2).
 - **A list** is in `[ ]`, with items separated by commas: `author = ["Tankun", "Multifinity"]` (D4). The host decides
-  which keys take a list.
+  which keys take a list. A long list may break between items, one per line, with a comma allowed after the last
+  (D5):
+
+  ```
+  author = [
+      "Tankun",
+      "Multifinity",
+  ]
+  ```
 
 ## 4. Comments
 
@@ -37,7 +45,6 @@ description = "Says hello to the world"    (this is a comment)
 
 ## Not decided
 
-- Long lists: whether a list may span several lines, and whether a comma after the last item is allowed.
 - How to write a `"` inside text.
 - Whether a `key = value` can sit outside any block.
 - Spaces or tabs for indentation, and how many.

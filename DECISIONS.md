@@ -55,9 +55,22 @@ end details
 The host decides which keys take a list. Claude had proposed repeating the key; the owner wrote this instead.
 (Owner, 2026-11-14)
 
+**D5. A long list may break between items, with a comma allowed after the last.** One item per line, indented, so
+adding an item is a one-line change:
+
+```
+details:
+    author = [
+        "Tankun",
+        "Multifinity",
+    ]
+end details
+```
+
+Claude proposed it; the owner chose: "yea". (Owner, 2026-11-14)
+
 ## Open
 
-- Long lists: whether a list may span several lines, and whether a comma after the last item is allowed.
 - How to write a `"` inside text.
 - Whether a `key = value` can sit outside any block.
 - Spaces or tabs for indentation, and how many.
