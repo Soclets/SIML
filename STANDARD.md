@@ -15,7 +15,8 @@ end permissions
 
 ## 2. `key = value`
 
-Inside a block, each line is a key, `=`, and a value (D2). The host decides which keys exist.
+Inside a block, each line is a key, `=`, and a value (D2). The host decides which keys exist. A `key = value`
+outside any block is refused: blocks are what make a file SIML (D8).
 
 ## 3. Values
 
@@ -47,7 +48,6 @@ description = "Says hello to the world"    (this is a comment)
 
 ## Not decided
 
-- Whether a `key = value` can sit outside any block.
 - Spaces or tabs for indentation, and how many.
 - Encoding (UTF-8 assumed), line endings, and the file extension (`.siml` today).
 - Which mistakes SIML itself refuses (an unclosed quote or block, a mismatched `end`, a bad key), and which are the

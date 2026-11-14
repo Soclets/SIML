@@ -78,9 +78,12 @@ mean a backslash and an `n`, when someone used to other languages expects a new 
 `\\` for a real backslash, so a Windows path is written `"C:\\Users"`. Claude proposed it; the owner chose: "yea".
 (Owner, 2026-11-14)
 
+**D8. Every `key = value` sits inside a block.** A `key = value` outside any block is refused. Blocks are what make
+a file SIML: each one names what its lines are for. Claude had proposed allowing loose keys and letting the host
+decide; the owner said: "Tbh, the blocks is what makes it SIML". (Owner, 2026-11-14)
+
 ## Open
 
-- Whether a `key = value` can sit outside any block.
 - Spaces or tabs for indentation, and how many.
 - Encoding (UTF-8 assumed), line endings, and the file extension (`.siml` today).
 - Which mistakes SIML itself refuses, and which are the host's to refuse.
