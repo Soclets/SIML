@@ -69,9 +69,13 @@ end details
 
 Claude proposed it; the owner chose: "yea". (Owner, 2026-11-14)
 
+**D6. Inside text, `\"` is a quote and `\\` is a backslash.** `description = "Says \"hi\" to the world"`. Almost every
+programming language does this, so it's learned once (Fale D29). Claude proposed it over doubling (`""`), noting that
+Fale's text has the same question; the owner chose: "yup". (Owner, 2026-11-14)
+
 ## Open
 
-- How to write a `"` inside text.
+- What a backslash before anything other than `"` or `\\` means: just a backslash, or refused.
 - Whether a `key = value` can sit outside any block.
 - Spaces or tabs for indentation, and how many.
 - Encoding (UTF-8 assumed), line endings, and the file extension (`.siml` today).
