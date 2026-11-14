@@ -91,7 +91,14 @@ proposed it; the owner asked "What does that mean?", then chose: "yea". (Owner, 
 names work. Both line endings, since Windows editors write CRLF and refusing it would trip Windows users for nothing.
 `.siml` is the owner's name for it (D1). Claude proposed them together; the owner chose: "yes". (Owner, 2026-11-14)
 
+**D11. SIML refuses mistakes of shape; the host refuses mistakes of meaning.** SIML refuses what any reader can see
+without knowing the host: an unclosed quote or block, an `end` that doesn't match, a `key = value` outside a block
+(D8), a tab (D9), a bad backslash (D7), an unbalanced `( )` comment, a line that isn't a block, a `key = value` or a
+comment, a key or block name that isn't lowercase letters, digits and `_` starting with a letter, and the same key
+twice in one block (lists use `[ ]`, D4). The host refuses an unknown block, key or bare word, text where a word
+belongs or the other way round, a list where the key doesn't take one, and a missing required key. Both kinds are
+shown in the host's own error layout. Claude proposed the split; the owner chose: "yea". (Owner, 2026-11-14)
+
 ## Open
 
-- Which mistakes SIML itself refuses, and which are the host's to refuse.
 - When Cyborg and Jernal move from D1's syntax to D2's.

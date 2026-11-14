@@ -51,7 +51,21 @@ description = "Says hello to the world"    (this is a comment)
 
 A SIML file is UTF-8, its lines may end in LF or CRLF, and its name ends in `.siml` (D10).
 
+## 6. Mistakes
+
+SIML refuses mistakes of shape, which any reader can see without knowing the host (D11):
+
+- an unclosed quote, an unclosed block, or an `end` that doesn't match its block
+- a `key = value` outside a block (D8), a tab (D9), or a backslash before anything but `"` or `\` (D7)
+- an unbalanced `( )` comment
+- a line that isn't a block, a `key = value` or a comment
+- a key or block name that isn't lowercase letters, digits and `_`, starting with a letter
+- the same key twice in one block
+
+The host refuses mistakes of meaning: an unknown block, key or bare word; text where a word belongs, or the other way
+round; a list where the key doesn't take one; a missing required key. Both kinds are shown in the host's own error
+layout.
+
 ## Not decided
 
-- Which mistakes SIML itself refuses (an unclosed quote or block, a mismatched `end`, a bad key), and which are the
-  host's to refuse.
+- When Cyborg and Jernal move from D1's syntax to this one.
