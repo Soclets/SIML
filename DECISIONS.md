@@ -101,4 +101,5 @@ shown in the host's own error layout. Claude proposed the split; the owner chose
 
 ## Open
 
-- When Cyborg and Jernal move from D1's syntax to D2's.
+- When Cyborg and Jernal move from D1's syntax to D2's. Both are paused while Fale is designed, so this waits until
+  they resume.

@@ -68,4 +68,4 @@ layout.
 
 ## Not decided
 
-- When Cyborg and Jernal move from D1's syntax to this one.
+- When Cyborg and Jernal move from D1's syntax to this one. Both are paused while Fale is designed.
